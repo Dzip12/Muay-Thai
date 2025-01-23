@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muay Thai Official</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div id="header-div">
+            <h1 id="header-h1">Muay Thai Official</h1>
+            <img src="slike/logo.avif" height="200px" id="header-img">
+        </div>
+        <nav>
+            <ul>
+                <button onclick="toLoginPage()">Log in</button>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="img-slider-div">
+            <img name="slide">
+        </div>
+
+        <div id="div-uvod">
+            <h1>Dobrodošli u našu školu!</h1>
+            <p>Dobrodošli na zvanični sajt naše škole Muay Thai-a, mesto gde se strast prema borilačkim veštinama i posvećenost treningu spajaju u jedno. 
+               Bez obzira na to da li ste potpuni početnik, rekreativac koji želi da se aktivira, 
+               ili takmičar sa velikim ambicijama, ovde ćete pronaći sve potrebne informacije o našim programima, 
+               trenerima i terminima. Pridružite nam se i započnite svoje putovanje ka zdravijem, snažnijem i disciplinovanijem načinu života!</p>
+        </div>
+        <hr id="first-hr">
+        <div id="div-rekreativci">
+            <div>
+                <h3>Trening za rekreativce</h3>
+                <p>Naša škola Muay Thai-a nudi treninge prilagođene svim uzrastima i nivoima kondicije, 
+                   idealne za <a href="rekreativci.html">rekreativce</a> koji žele da unaprede svoju fizičku formu, steknu samopouzdanje 
+                   i nauče osnove ovog plemenitog sporta. Treninzi su dinamični, zabavni i fokusirani na razvoj snage, 
+                   fleksibilnosti i koordinacije, uz stručan nadzor iskusnih trenera. Bez obzira na to da li želite da 
+                   smršate, oslobodite se stresa ili jednostavno uživate u treninzima, naša škola je pravo mesto za vas.</p>
+            </div>
+            <img src="slike/rekreativno.png" height="300px">
+        </div>
+        <div id="div-profi">
+            <img src="slike/profi.png" height="300px">
+            <div>
+                <h3>Trening za takmičare</h3>
+                <p>Za one koji žele da Muay Thai pretvore u svoj životni poziv, nudimo vrhunski program za <a href="takmicari.html">takmičare</a>. 
+                   Naši treninzi su intenzivni, tehnički detaljni i usmereni na razvoj borbenih veština potrebnih za uspeh u ringu. 
+                   Radimo na snazi, izdržljivosti, taktici i mentalnoj pripremi, oslanjajući se na bogato iskustvo naših trenera i vrhunske metode obuke. 
+                   Pridružite nam se i postanite deo tima koji gaji šampionski duh!</p>
+            </div>
+        </div>
+        <hr id="second-hr">
+        <div id="div-treneri">
+            <h1>Nastavni kadar</h1>
+            <div id="div-zuca">
+                <img src="slike/glavni-Zuca.jpg" height="500px">
+                <div id="zuca-opis">
+                    <h3>Zuća - glavni trener</h3>
+                    <p>Ovaj ovde je glavni. On se sve pita i njegova reč je apsolutna. Ko krši pravila odgovara pred njim i nikad se ne završi dobro.
+                       Uglavnom je miran i spava po ceo dan a kad ne spava, jede. Svi ga poštuju i on poštuje druge.</p>
+                </div>
+            </div>
+            <div id="div-boka">
+                <div id="boka-opis">
+                    <h3>Boka - pomoćni trener</h3>
+                    <p>Boka je strastveni ljubitelj Muay Thai-a i posvećen pomoćni trener u našoj školi.
+                       Sa višegodišnjim iskustvom u borilačkim sportovima, poznat je po svom prijateljskom pristupu i sposobnosti da motiviše svakog člana.
+                       Njegov cilj je da svakom polazniku pomogne da razvije tehniku, izdržljivost i samopouzdanje,
+                       bilo da treniraju rekreativno ili se pripremaju za takmičenja.</p>
+                </div>
+                <img src="slike/trener-Boka.jpg" height="500px">
+            </div>
+            <div id="div-markovic">
+                <img src="slike/trener-Markovic.jpg" height="500px">
+                <div id="markovic-opis">
+                    <h3>Marković - misteriozni pomoćni trener</h3>
+                    <p>Marković je enigmatična figura naše škole Muay Thai-a. Niko tačno ne zna odakle je došao ni kako je postao deo našeg tima, 
+                       ali njegove veštine govore same za sebe. Njegova tehnika je precizna, a treninzi intenzivni i inspirativni. 
+                       Sa Markovićem je svaka sesija ne samo fizički izazov, već i prilika da otkrijete novu stranu ovog drevnog borilačkog sporta - uz dozu 
+                       misterije koja ga okružuje.</p>
+                </div>
+            </div>
+        </div>
+        <hr id="third-hr">
+        <div id="div-clanarina">
+            <h1>Članarine i cene</h1>
+            <div id="div-clanarina-space">
+                <div id="clanarina-rekre">
+                    <h3>Članarina za rekreativce<span> - mesečno*</span></h3>
+                    <h2>25€</h2>
+                    <ul class="ul-clanarina">
+                        <li>1 trening po danu</li>
+                        <li>5 treninga po nedelji</li>
+                        <li>Treninzi sa našim pomoćnim trenerima</li>
+                        <li>1 trening po nedelji sa našim glavnim trenerom</li>
+                        <li>Osnovne tehnike Muay Thai</li>
+                        <li>Sparinzi sa trenerima</li>
+                    </ul>
+                    <button onclick="toPlacanjePage()">Prijavite se</button>
+                </div>
+                <div id="clanarina-profi">
+                    <h3>Članarina za takmičare<span> - mesečno*</span></h3>
+                    <h2>40€</h2>
+                    <ul class="ul-clanarina">
+                        <li>2 treninga po danu</li>
+                        <li>10 treninga po nedelji</li>
+                        <li>Intenzivniji treninzi</li>
+                        <li>Treninzi sa glavnim trenerom</li>
+                        <li>Napredne tehnike Muay Thaia</li>
+                        <li>Sparinzi sa trenerima + sparinzi medjusobno</li>
+                    </ul>
+                    <button onclick="toPlacanjePage()">Prijavite se</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023. Muay Thai škola.</p>
+        <div>
+            <h3>Posebno hvala nasim saradnicima:</h3>
+            <img class="white-background" src="slike/logo-apple.png" height="100px">
+            <img class="white-background" src="slike/logo-google.webp" height="100px">
+            <img class="white-background" src="slike/logo-ibm.png" height="100px">
+            <img src="slike/logo-microsoft.jpg" height="100px">
+            <img src="slike/logo-raiffeisen.png" height="100px">
+            <img src="slike/logo-samsung.png" height="100px">
+            <img src="slike/logo-realme.png" height="100px">
+            <img src="slike/logo-volks.webp" height="100px">
+            <img class="white-background" src="slike/logo-oracle.png" height="100px">
+            <img class="white-background" src="slike/logo-viva.png" height="100px">
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muay Thai Official - Placanje</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="placanje.css">
+</head>
+<body>
+    <header>
+        <div id="header-div">
+            <h1 id="header-h1">Muay Thai Official</h1>
+            <img src="slike/logo.avif" height="200px" id="header-img">
+        </div>
+        <nav>
+            <ul>
+                <button onclick="toLoginPage()">Log in</button>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Članarine i plaćanje</h1>
+        <div id="div-placanje">
+            <span id="div-placanje-span"><span id="div-placanje-span-span">Raiffeisen Bank</span><img src="slike/logo-mastercard.webp" id="logo-mastercard"></span>
+            <form id="placanje-form">
+                <label>Broj kartice </label><input type="text" placeholder="XXXX-YYYY-ZZZZ-ABCD" id="input-cardNumber">
+                <div id="div-placanje-form-div">
+                    <span><label>Date </label><input type="text" placeholder="MM/YY" id="input-date"></span>
+                    <span><label>Code </label><input type="text" placeholder="YYY" id="input-code"></span>
+                </div>
+                <label>Name </label><input type="text" placeholder="Firstname Lastname" id="input-name"><br>
+                <p class="hidden" id="placanje-p"></p>
+                <div id="div-placanje-form-button"><button type="button" onclick="validateForm()">Učlanite se</button></div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023. Muay Thai škola.</p>
+        <div>
+            <h3>Posebno hvala nasim saradnicima:</h3>
+            <img class="white-background" src="slike/logo-apple.png" height="100px">
+            <img class="white-background" src="slike/logo-google.webp" height="100px">
+            <img class="white-background" src="slike/logo-ibm.png" height="100px">
+            <img src="slike/logo-microsoft.jpg" height="100px">
+            <img src="slike/logo-raiffeisen.png" height="100px">
+            <img src="slike/logo-samsung.png" height="100px">
+            <img src="slike/logo-realme.png" height="100px">
+            <img src="slike/logo-volks.webp" height="100px">
+            <img class="white-background" src="slike/logo-oracle.png" height="100px">
+            <img class="white-background" src="slike/logo-viva.png" height="100px">
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

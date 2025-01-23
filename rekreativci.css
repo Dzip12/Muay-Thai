@@ -1,0 +1,109 @@
+#div-benefiti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+#div-benefiti h1{
+    font-size: 3rem;
+}
+#div-benefiti ul{
+    list-style-type: '- ';
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+    margin-left: 20px;
+}
+
+#div-trening{
+    margin-top: 100px;
+}
+#div-trening h1{
+    font-size: 3rem;
+    text-align: center;
+}
+#div-raspored{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+#div-raspored p{
+    width: 1000px;
+    font-size: 1.6rem;
+    margin-top: 50px;
+    line-height: 35px;
+}
+#div-raspored img{
+    margin-top: 70px;
+    border-radius: 100%;
+    background-color: hsl(0, 0%, 85%);
+}
+#div-opis-treninga{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    margin-top: 100px;
+}
+#div-opis-treninga div h3{
+    font-size: 2rem;
+}
+#div-opis-treninga div ul{
+    list-style-type: '- ';
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+    margin-left: 20px;
+}
+#div-opis-treninga img{
+    margin-top: 70px;
+    border-radius: 100%;
+    background-color: hsl(0, 0%, 85%);
+}
+
+#rekreativci-clanarina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+#rekreativci-div{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+#rekreativci-div h3{
+    background-color: hsl(0, 100%, 55%);
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+#rekreativci-div span{
+    font-size: 1rem;
+}
+#rekreativci-div h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3rem;
+}
+#rekreativci-ul-clanarina{
+    list-style-type: '- ';
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+#rekreativci-div button{
+    border: none;
+    background-color: hsl(0, 100%, 55%);
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+}

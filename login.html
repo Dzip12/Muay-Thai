@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muay Thai Official - Log in</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div id="header-div">
+            <h1 id="header-h1">Muay Thai Official</h1>
+            <img src="slike/logo.avif" height="200px" id="header-img">
+        </div>
+        <hr>
+        <div id="div-form">
+            <form>
+                <label>Username: </label><input type="text" id="username" placeholder="Boka123"><br><br>
+                <label>E-mail: </label><input type="text" id="email" placeholder="nesto123@gmail.com"><br><br>
+                <label>Password: </label><div><input type="password" id="password" placeholder="Password.123"><img id="eyeicon" height="30px" src="slike/eye-hidden.png"></div><br>
+                <p id="form-p"></p>
+                <button type="button" onclick="toMain()">Log in</button>
+            </form>
+        </div>
+    </header>
+    <footer>
+        <p>&copy; 2023. Muay Thai škola.</p>
+        <div>
+            <h3>Posebno hvala nasim saradnicima:</h3>
+            <img class="white-background" src="slike/logo-apple.png" height="100px">
+            <img class="white-background" src="slike/logo-google.webp" height="100px">
+            <img class="white-background" src="slike/logo-ibm.png" height="100px">
+            <img src="slike/logo-microsoft.jpg" height="100px">
+            <img src="slike/logo-raiffeisen.png" height="100px">
+            <img src="slike/logo-samsung.png" height="100px">
+            <img src="slike/logo-realme.png" height="100px">
+            <img src="slike/logo-volks.webp" height="100px">
+            <img class="white-background" src="slike/logo-oracle.png" height="100px">
+            <img class="white-background" src="slike/logo-viva.png" height="100px">
+        </div>
+    </footer>
+
+    <script>
+
+        username = document.getElementById("username");
+        email = document.getElementById("email");
+        password = document.getElementById("password");
+        paragraph = document.getElementById("form-p");
+        eyeicon = document.getElementById("eyeicon");
+
+        function toMain(){
+            event.preventDefault();
+
+            const nameRegex = /^[A-Za-z0-9]+$/;
+            const emailRegex = /^[A-Za-z0-9.]+@gmail\.com$/;
+            const passwordRegex = /^[A-Za-z0-9.]+$/;
+
+            const name = username.value;
+            const mail = email.value;
+            const pass = password.value;
+
+            if(!nameRegex.test(name) || !emailRegex.test(mail) || !passwordRegex.test(pass)){
+                paragraph.textContent = "Neispravno!";
+            }
+            else{
+                window.location.href = "index.html";
+            }
+        }
+
+        function showPassword(){
+            if(password.type === "password"){
+                password.type = "text";
+                eyeicon.src = "slike/eye-shown.png";
+            }
+            else{
+                password.type = "password";
+                eyeicon.src = "slike/eye-hidden.png"
+            }
+        }
+
+        eyeicon.addEventListener("mousedown", showPassword);
+        eyeicon.addEventListener("mouseup", showPassword);
+    </script>
+</body>
+</html>
